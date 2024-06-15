@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance Trakker</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="transaction.css">
+</head>
+<body>
+    <header class="heading">
+        <div id="logo">
+            <img src="8168649_activity_sport_tracker_fitness_icon.png" alt="logo" id="img1">
+        </div>
+        <div class="nav">
+            <ul class="list">
+                <li><a href="#dashboard" id="dash">Dashboard</a></li>
+                <li><a href="#transaction" id="trans">Transaction</a></li>
+                <li><a href="#setting" id="set">Setting</a></li>
+            </ul>
+        </div>
+    </header>
+    <!--                                     infooo section                           -->
+    <div class="container">
+        <div class="text">
+            <p id="fonts">Track  Your Incomes
+                <br>And 
+               Expenseses
+            </p>
+        </div>
+        <div class="user_details">
+            <p id="greet">Hey, <span id="user"></span> </p>
+            <input type="text" placeholder="Enter Your Name" name="name" id="username" required>
+        </div>
+    </div>
+    <!--                                     dashbord                                     -->
+    <section id="dashboard">
+        <div class="summary">
+            <h1 id="head">Dashboard</h1>
+            <div class="size">Total Income: ₹<span id="total-income">0</span></div>
+            <div class="size">Total Expenses: ₹<span id="total-expenses">0</span></div>
+            <div class="size">Net Balance: ₹<span id="net-balance">0</span></div>
+        </div>
+        <div class="recent">
+        <h2 id="rt">Recent Transactions</h2>
+        <ul id="recent-transactions"></ul>
+        </div>
+    </section>
+    <!--                               transaction                       -->
+
+    <section class="transaction" id="transaction">
+        <div class="add">
+            <h2>Transaction</h2>
+            <form class="add_data">
+                <input type="text" placeholder="Discription" id="description">
+                <input type="number" placeholder="Amount" id="amount">
+                <input type="text" placeholder="Date" id="date">
+                <select name="" id="category">
+                    <option value="income">Income</option>
+                    <option value="expense">expense</option>
+                </select>
+                <button id="btn">Submit</button>
+            </form>
+        </div>
+        <div class="tables">
+        <table id="transactions-table">
+            <thead>
+                <tr id="content">
+                    <th>Description</th>
+                    <th>Amount</th>
+                    <th>Date</th>
+                    <th>Category</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody class="texts2">
+
+            </tbody>
+        </table>
+        </div>
+</section>
+<!---                                            report                                  -->
+
+
+<!--                               Animation effect                             -->
+
+    <div class="scontainer">
+    <div class="seconder_container">
+        <div class="box"> <p><b>Dashboard</b><br>Welcome to your personal finance dashboard.<br> Here you can get a quick overview of your financial status, including your total income, total expenses, and net balance.<br> </p></div>
+        <div class="box"><p><b>Transaction</b><br>Manage all your financial transactions here.<br> You can add new transactions, view all your past transactions, and edit or delete any entry.<br> This helps you keep track of every penny you earn or spend.</p></div>
+        <div class="box"><p><b>About FT</b><br>Our Personal Finance Tracker is designed to help you manage your finances effortlessly. Track your income and expenses, generate insightful reports, and gain control over your financial health. .</p></div>
+        <div class="box"><p><b>About user</b><br>As a dedicated user of the Personal Finance Tracker, you are taking significant steps towards financial responsibility and planning. By keeping a close eye on your income and expenses.</p></div>
+    </div>
+    </div>
+<!--                                    setting                                          -->
+    <div id="setting">
+        <button id="Reset">Reset Data</button>
+    </div>
+    <!--                                   footer                                   -->
+    <footer>
+        <div class="footer1">
+            <div>
+                <ul class="feet">
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Career</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="feet">
+                    <li><a href="">Privacy Policy</a></li>
+                    <li><a href="">Term of Service</a></li>
+                    <li><a href="">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="feet">
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Support</a></li>
+                    <li><a href="">Accessiblity</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer2"> 
+            <p class="foot">This cite is created by &copy;md shami</p></div>
+    </footer>
+    <script src="track.js"></script>  
+</body>
+</html>

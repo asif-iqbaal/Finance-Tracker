@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.heading{
+    width: 100%;
+    height: 60px;
+    background-color: #3a0ca3;
+    display: flex;
+
+}
+#logo {
+    display: flex;
+    height: 100%;
+    width: 10%;
+    justify-content: center;
+    align-items: center;
+}
+.nav {
+    display: flex;
+    width: 90%;
+}
+#img1 {
+    height: 80%;
+    width: 40%;
+    background-size: cover;
+}
+
+.list {
+    margin-left: 50%;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.list li{
+    list-style-type: none;
+}
+.list li a{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+}
+.list li a:hover{
+    filter: drop-shadow(1px 1px 2px white)
+}
+.container{
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    align-items: center;
+    background-color: #3a0ca3;
+}
+.text{
+    display: flex;
+    width: 50%;
+}
+#fonts {
+    padding-left: 2%;
+    color: white;
+    font-size: 400%;
+    filter: drop-shadow(2px 10px 7px black);
+}
+
+.user_details{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#greet{
+    visibility: hidden;
+    color: white;
+    font-size: 300%;
+}
+#username {
+    width: 50%;
+    height: 4vh;
+    border: none;
+    border-radius: 6px;
+    text-align: center;
+}
+
+#dashboard{
+    width: 100%;
+   height: 40vh;
+   display: flex;
+ background-color: #3a0ca3;
+}
+#head {
+    color: red;
+    height: 20%;
+    font-size: 300%;
+    margin-bottom: 10%;
+}
+.summary{
+    color: white;
+    width: 50%;
+    height: 100%;
+    font-size: 200%;
+}
+.recent{
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+.scontainer{
+    width: 100%;
+    height: 40vh;
+    position: relative;
+    background-color: rgb(42, 39, 39);
+    overflow: hidden;
+}
+.seconder_container{
+    width: 70%;
+    height: 40vh;
+    position: relative;
+    background-color: rgb(42, 39, 39);
+    display: flex;
+    gap: 1em;
+    justify-content: space-evenly;
+    align-items: center;
+      animation: moveBoxes 10s linear infinite;  
+   /* animation: moveBoxesRight 10s linear infinite;*/
+}
+.box {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    width: 40%;
+    height: 30vh;
+    border-right: 5px solid #3a0ca3;
+    border-radius: 10px;
+    background-color: rgb(84, 77, 77);
+    box-shadow: 1px 1px 20px white;
+}
+.box p {
+    font-size: 100%;
+    color: white;
+}
+#recent-transactions li{
+    list-style-type: none;
+    color: rgb(223, 164, 36);
+    margin-top: 2%;
+    font-size:140% ;
+}
+
+@keyframes moveBoxes{
+    0%{
+        transform: translatex(100vw);
+    }
+    100%{
+        transform: translateX(-100vw);
+    }
+    /* 10% {
+        transform: translateX(0vw);
+    } */
+
+}
+/* @keyframes moveBoxesRight {
+    20% {
+        transform: translateX(90vw);
+    }
+    100% {
+        transform: translateX(-90vw);
+    }
+} */
+/* footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+}
+.footer1{
+    background-color: rgb(30, 28, 28);
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.feet li {
+    padding-bottom: 5%;
+    list-style-type: none;
+}
+.feet li a{
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+}
+.foot{
+    text-align: right;
+    width: 100%;
+}
+#setting {
+    visibility: hidden;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(84, 77, 77);
+}
+#Reset {
+    height: 50%;
+    width: 20%;
+    border-radius: 3px;
+    box-shadow: 1px 1px 10px white;
+}
+#Reset:hover{
+    box-shadow: 1px 1px 10px red;
+}
+
+@media (min-width:300px) and (max-width: 750px){
+
+    .heading {
+        width: 100%;
+    }
+    #logo {
+        width: 10%;
+    }
+    #img1 {
+        width: 60%;
+        height: 50%;
+    }
+    .nav {
+        width: 100%;
+    }
+    .list {
+        width: 85%;
+        margin-left: 30%;
+    }
+    .list li {
+        padding-left: 3%;
+    }
+    .list li a {
+        font-size: small;
+    }
+    .container {
+        height: 25vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .text {
+        width: 100%;
+    }
+    #fonts {
+        font-size: 200%;
+    }
+    .user_details {
+        height: 50%;
+        width: 100%;
+    }
+    #greet {
+        color: white;
+        font-size: 120%;
+    }
+    #username {
+        width: 90%;
+        height: 20%;
+    }
+    #dashboard {
+        width: 100%;
+        height: 38vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .summary {
+        margin-left: 2%;
+        width: 90%;
+        height: 25vh;
+        box-shadow: 8px 8px 10px black;
+    }
+    #head {
+        width: 100%;
+        color: red;
+        font-size: 150%;
+    }
+    .size {
+        font-size: 50%;
+        padding-bottom: 2%;
+    }
+    .recent {
+        color: white;
+        text-align: center;
+        width: 100%;
+    }
+    #rt {
+        padding-top: 5%;
+        font-size: 110%;
+    }
+    #recent-transactions{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #recent-transactions li{
+        font-size: small;
+        
+    }
+
+    .scontainer {
+        width: 100%;
+        height: 25vh;
+        position: relative;
+        background-color: rgb(42, 39, 39);
+        overflow: hidden;
+    }
+    .seconder_container {
+        width: 150%;
+        height: 100%;
+    }
+    .box {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        width: 22%;
+        height: 60%;
+        border-right: 5px solid #3a0ca3;
+        border-radius: 10px;
+        background-color: rgb(84, 77, 77);
+        box-shadow: 1px 1px 6px white;
+    }
+    .box p {
+        font-size: xx-small;
+    }
+    footer {
+        height: 15vh;
+    }
+    .footer1 {
+        height: 15vh;
+    }
+    .feet {
+        font-size: small;
+    }
+    .footer2 {
+        font-size: small;
+    }
+    .feet li a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: x-small;
+    }
+}
