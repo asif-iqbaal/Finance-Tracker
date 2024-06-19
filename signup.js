@@ -32,7 +32,7 @@ openRequest.onsuccess = (e) => {
                 password: password 
             });
             request.onsuccess = (e)=>{
-                window.location.href = 'log.html'
+                window.location.href = 'index.html'
                 console.log("data added signup completed");
             }
             request.onerror() = (e) =>{
